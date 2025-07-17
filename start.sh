@@ -14,7 +14,7 @@ install_frontend() {
 
 start_backend() {
     cd backend
-    python app.py &
+    python3 app.py &
     BACKEND_PID=$!
     cd ..
     sleep 2
@@ -22,7 +22,7 @@ start_backend() {
 
 start_frontend() {
     cd frontend
-    npm start &
+    npm run dev &
     FRONTEND_PID=$!
     cd ..
     sleep 3

@@ -58,14 +58,14 @@ A full-stack application for processing customer transaction data from Excel fil
 1. **Start the Backend Server**:
    ```bash
    cd backend
-   python app.py
+   python3 app.py
    ```
    Backend will run on `http://127.0.0.1:5001`
 
 2. **Start the Frontend Development Server**:
    ```bash
    cd frontend
-   npm start
+   npm run dev
    ```
    Frontend will run on `http://localhost:5173`
 
