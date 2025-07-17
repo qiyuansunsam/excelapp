@@ -388,6 +388,9 @@ def upload_file():
         return jsonify({"error": "No selected files"}), 400
 
     base_input_name = files[0].filename.split('.')[0]
+    
+    for file in files:
+        file.save(os.path.join(UPLOAD_FOLDER, file.filename))
 
     is_valid, message, df_dict = validate_and_read_excel(files)
     if not is_valid:

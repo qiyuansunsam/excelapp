@@ -67,7 +67,7 @@ A full-stack application for processing customer transaction data from Excel fil
    cd frontend
    npm start
    ```
-   Frontend will run on `http://localhost:3000`
+   Frontend will run on `http://localhost:5173`
 
 ### Automatic Setup
 
@@ -79,7 +79,7 @@ Use the provided script to start both servers automatically:
 
 ## Usage
 
-1. Open your browser and navigate to `http://localhost:3000`
+1. Open your browser and navigate to `http://localhost:5173`
 2. Upload an Excel file with the following structure:
    - **Customers Sheet**: Single column with format `customer_id_name_email_dob_address_created_date`
    - **Products Sheet**: Columns `product_code`, `product_name`, `category`, `unit_price`
@@ -109,20 +109,20 @@ Use the provided script to start both servers automatically:
 ```
 excelapp/
 ├── backend/
-│   ├── app.py              # Main Flask application
-│   ├── requirements.txt    # Python dependencies
-│   ├── uploads/           # Upload directory
-│   └── outputs/           # Generated files directory
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── uploads/
+│   └── outputs/
 ├── frontend/
 │   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── App.jsx        # Main React app
-│   │   └── App.css        # Styling
-│   ├── package.json       # Node.js dependencies
-│   └── public/            # Static assets
+│   │   ├── components/
+│   │   ├── App.jsx
+│   │   └── App.css
+│   ├── package.json
+│   └── public/
 ├── README.md
-├── start.sh               # Automatic startup script
-└── .gitignore            # Git ignore rules
+├── start.sh
+└── .gitignore
 ```
 
 ## API Endpoints
@@ -139,14 +139,3 @@ The application includes comprehensive error handling for:
 - Network connectivity issues
 - Geolocation API failures
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
